@@ -1,0 +1,55 @@
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1031px)
+	.inner-gallery
+		a
+			width: 150px
+	.nav-mobile
+		display: none
+		button
+			display: none
+
+	table
+		width: 60%
+
+	.price-header
+		width: 70%
+
+@media screen and (max-width: 1030px)
+
+	@import "hamburger"
+
+	.header
+		display: flex
+		flex-direction: column
+		height: 250px
+		a
+			display: block
+			justify-content: center
+			margin: 0 auto
+		#logo
+			display: block
+			max-width: 350px
+			margin-left: -33px
+		.nav
+			display: none
+			justify-content: center
+			flex-wrap: wrap
+			width: 80%
+			margin: 0px auto 40px
+
+
+
+@media screen and (min-width: 481px)
+	#carousel-mobiles,
+	#mobile-gallery-header
+		//display: none
+
+
+@media screen and (max-width: 430px)
+
+	#small-text
+		font-size: .8em
+
+	.image-section
+		background-position: right

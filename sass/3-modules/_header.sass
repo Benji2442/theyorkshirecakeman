@@ -1,0 +1,57 @@
+/* HEADER MODULE */
+
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	//height: 175px
+	padding-top: 20px
+	background-color: $third-color
+	+clearfix
+
+.box-header
+	width: 90%
+	margin: 0 auto
+	display: flex
+	justify-content: flex-end
+	a
+		margin-right: 20%
+
+#logo
+	+hide-text
+	//float: left    USING FLEX ON .HEADER INSTEAD OF FLOATS
+	width: 350px
+	height: 150px
+	padding: 0px
+	margin-right: 20%
+	background: center no-repeat
+	background-image: url("img/logofinal.svg")
+
+.nav
+	//float: right     USING FLEX ON .HEADER INSTEAD OF FLOATS
+	width: 500px
+	//margin-right: 5%
+	margin: auto
+	display: inline-block
+	justify-content: space-between
+	align-items: center
+
+	ul
+		display: flex
+		justify-content: space-around
+		li>a
+			font-size: 1.25em
+			text-decoration: underline
+			color: $primary-color
+			background-color: lighten($secondary-color, 40%)
+			padding: 0.938em 1.5em
+			border-radius: 0px 35px
+			&:hover
+				color: $secondary-color
+			//&:active  <<< USING .ACTIVE INSTEAD
+				//background-color: $primary-color
+				//color: lighten($secondary-color, 40%)
+		.active
+			background-color: $primary-color
+			color: lighten($secondary-color, 40%)
