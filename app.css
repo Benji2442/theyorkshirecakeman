@@ -216,6 +216,7 @@ h3 {
 
 /* LAYOUT STYLES */
 /* MODULE STYLES */
+/* SPLASH SCREEN STYLES */
 /* HEADER MODULE */
 .header {
   display: flex;
@@ -273,7 +274,7 @@ h3 {
 /* IMAGE SECTION */
 .image-section {
   width: auto;
-  margin: 0px 5% 30px;
+  margin: 0 5% 30px;
   height: 350px;
   background-size: cover;
   background-position: center;
@@ -478,7 +479,10 @@ caption {
     width: 60%; }
 
   .price-header {
-    width: 70%; } }
+    width: 70%; }
+
+  .image-section {
+    height: 500px; } }
 @media screen and (max-width: 1030px) {
   .nav-mobile {
     z-index: 999;
