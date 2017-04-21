@@ -217,6 +217,18 @@ h3 {
 /* LAYOUT STYLES */
 /* MODULE STYLES */
 /* SPLASH SCREEN STYLES */
+#splashscreen {
+  background-color: #F5F4F4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+  #splashscreen #splash {
+    background-image: url("img/logofinal.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+
 /* HEADER MODULE */
 .header {
   display: flex;
