@@ -224,10 +224,16 @@ h3 {
   left: 0;
   height: 100%;
   width: 100%; }
-  #splashscreen #splash {
-    background-image: url("img/logofinal.svg");
-    background-repeat: no-repeat;
-    background-position: center; }
+  #splashscreen img {
+    margin: 15% auto; }
+
+.enter-site {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto; }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
 
 /* HEADER MODULE */
 .header {
@@ -257,7 +263,6 @@ h3 {
   width: 350px;
   height: 150px;
   padding: 0px;
-  margin-right: 20%;
   background: center no-repeat;
   background-image: url("img/logofinal.svg"); }
 
@@ -494,7 +499,11 @@ caption {
     width: 70%; }
 
   .image-section {
-    height: 500px; } }
+    height: 500px; }
+
+  #splashscreen img {
+    height: 500px;
+    margin: 5% auto; } }
 @media screen and (max-width: 1030px) {
   .nav-mobile {
     z-index: 999;
@@ -548,8 +557,7 @@ caption {
       margin: 0 auto; }
     .header #logo {
       display: block;
-      max-width: 350px;
-      margin-left: -33px; }
+      max-width: 350px; }
     .header .nav {
       display: none;
       justify-content: center;

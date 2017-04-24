@@ -1,17 +1,31 @@
 // jquery files
 
+
 $(".image-section").hide().slideDown("slow");
 
 $("#navbar").children().hide().fadeIn(2500);
 
 //adding splash screen
-$("body").append('<div id="splashscreen"></div>');
+$("body").append('<div id="splashscreen"><img id="splash-logo" src="img/logofinal.svg"></div>');
 
-//adding image to splash
-$("#splashscreen").prepend('<div id="splash"></div>')
+//stops scrolling
+$('body').addClass('stop-scrolling')
 
-//stops scroll bar working
-$('html, body').css({
-    overflow: 'hidden',
-    height: '100%'
+//hiding nav-mobile button
+$(".nav-mobile").hide();
+
+
+$("#splashscreen img").hide().fadeIn(3000);
+
+//$("#splashscreen").append("<h1>Welcome to the Yorkshire cake man</h1>")
+$("#splashscreen").append("<button type='button' class='btn center-block btn-lg btn-default enter-site'>Enter site</button>");
+
+
+
+$(".enter-site").click(function(){
+	$("#splashscreen").hide();
+	$(".nav-mobile").show();
+	$('body').removeClass('stop-scrolling')
+	$(".image-section").hide().slideDown("slow");
+	$("#navbar").children().hide().fadeIn(2500);
 });
