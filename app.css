@@ -557,18 +557,31 @@ caption {
       margin: 0 auto; }
     .header #logo {
       display: block;
-      max-width: 350px; }
+      max-width: 100%;
+      background-size: cover;
+      margin: 0 auto; }
     .header .nav {
       display: none;
       justify-content: center;
       flex-wrap: wrap;
-      width: 80%;
+      width: 100%;
       margin: 0px auto 40px; } }
 @media screen and (max-width: 430px) {
   #small-text {
     font-size: 0.8em; }
 
   .image-section {
-    background-position: right; } }
+    background-position: right; }
+
+  #logo {
+    display: block;
+    max-width: 50%;
+    background-size: cover;
+    margin: 0 auto; } }
+@media screen and (max-width: 320px) {
+  #logo {
+    display: block;
+    width: 300px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=app.css.map */
