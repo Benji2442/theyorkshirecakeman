@@ -13,7 +13,7 @@ $(".nav-mobile").hide();
 //fades #logo on splashcreen
 $("#splashscreen img").hide().fadeIn(3000);
 
-//$("#splashscreen").append("<h1>Welcome to the Yorkshire cake man</h1>")
+//creates button
 $("#splashscreen").append("<button type='button' class='btn center-block btn-lg btn-default enter-site'>Enter site</button>");
 
 //enter site button to close splashscreen and start website animations
